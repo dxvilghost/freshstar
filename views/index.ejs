@@ -3,14 +3,14 @@
 <html lang="en" >
 
 
-<!-- roi 😳😲🤩 -->
+<!-- 👑 -->
 
 
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#fbc2e3"/>
+  <meta name="theme-color" content="#000001"/>
   <meta property="og:image" content="https://cdn.discordapp.com/emojis/911692966060511274.png?size=96">
   <link rel="shortcut icon" href="https://cdn.discordapp.com/emojis/936974683117588522.webp?size=96&quality=lossless" type="image/gif">
   <meta property="og:title" content="*:☆`"/>
@@ -50,7 +50,7 @@
 
         <div class="at-user__name"><%= yogurt.username%>#<%= yogurt.discriminator %></div>
 
-     <img src="https://cdn.discordapp.com/emojis/778780190280646676.gif?size=96&quality=lossless" width="20" height="15">
+<img src="<%=emoji.topic%>" width="20" height="15">
 
         </ul>
       </div>
@@ -65,7 +65,7 @@
 
         <div class="at-user__name"><%= rep7.username %>#<%= rep7.discriminator %></div>
 
-      <img src="https://cdn.discordapp.com/emojis/778780190280646676.gif?size=96&quality=lossless" width="20" height="15">
+<img src="<%=emoji.topic%>" width="20" height="15">
 
 
         </ul>
@@ -79,12 +79,12 @@
     <div class="at-column">
       <div class="at-user">
         <div class="at-user__avatar">
-        <img src="<%= member.user.displayAvatarURL({ dynamic: true, format: "png", size: 4096 }) %>" alt="<%= member.user.username %>"/>
+        <img src="<%= member.user.displayAvatarURL({ dynamic: true, format: "png", size: 4096 }) %>" alt="<%= yogurt.username %>"/>
         </div>
 
         <div class="at-user__name"><%= member.user.username %>#<%= member.user.discriminator %></div>
 
-      <img src="https://cdn.discordapp.com/emojis/778780190280646676.gif?size=96&quality=lossless" width="20" height="15">
+<img src="<%=emoji.topic%>" width="20" height="15">
 
 
         </ul>
@@ -94,6 +94,10 @@
 <% });%>
 
 
+
+<% members.forEach(member => { %>
+    <li><%= member.user.username %></li>
+<% });%>
 
 
 
