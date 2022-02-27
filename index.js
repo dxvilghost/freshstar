@@ -34,7 +34,7 @@ app.get("/", async (req, res, next) => {
   const emoji = await client.channels.fetch
   ("947627696861622293")
   const server = await client.guilds.fetch("642499335858290701")
-  console.log(emoji)
+
 
 
   //const membros = server.roles.fetch('944298404375322664').members.map(m=>m.user.tag);
