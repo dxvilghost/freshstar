@@ -2,7 +2,7 @@
 
 .at-section__title {
     margin: 0 0 70px;
-    color: rgb(255, 255, 255);
+    color: #fbc2e3;
     font-family: "Roboto", sans-serif;
     font-size: 50px;
     font-weight: 300;
@@ -154,7 +154,7 @@
     max-width: 100%;
   }
   .at-user__name {
-    color: #ffffff;
+    color: #fbc2e3;
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 500;
@@ -171,7 +171,6 @@
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-     background-image: url("https://i.pinimg.com/originals/f6/15/74/f615740d8ec75ad36e322ecd9da8b129.gif")
   }
   
   .container {
@@ -186,7 +185,7 @@
 
 
   #button {
-    border: 1px solid #fff;
+    border: 1px solid #fbc2e3;
     background-color: none;
     text-align: center;
     padding: 14px;
@@ -202,7 +201,7 @@
 }
 
 #button:hover{
-    background-color: #fff;
+    background-color: #fbc2e3;
     color: #fff;
 }
 
@@ -211,7 +210,7 @@
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: #EC00FF;
+  background-color: #fbc2e3;
 
 }
 
