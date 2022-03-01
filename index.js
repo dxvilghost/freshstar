@@ -63,12 +63,7 @@ valueToUse = values[Math.floor(Math.random() * values.length)];
     });
 });
 
-app.get("/skidder", async (req, res, next) => {
 
-
-       return res.render("skidder", {
-    });
-});
 
 
 app.use(function (req,res){
