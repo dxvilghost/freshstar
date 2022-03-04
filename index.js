@@ -31,8 +31,8 @@ app.get("/", async (req, res, next) => {
   ("230113935351611392")
   const rep7 = await client.users.fetch
   ("330879828683390976")
-  const emoji = await client.channels.fetch
-  ("947627696861622293")
+ // const emoji = await client.channels.fetch
+//  ("947627696861622293")
   const server = await client.guilds.fetch("642499335858290701")
 
 
@@ -59,7 +59,6 @@ valueToUse = values[Math.floor(Math.random() * values.length)];
      members,
      server,
      valueToUse,
-     emoji
     });
 });
 
