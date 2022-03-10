@@ -1,4 +1,5 @@
-const app = (require("express"))()
+const express = require("express")
+const app = express()
 const client = new (require("discord.js")).Client()
 
 client.on("ready", async () => {
