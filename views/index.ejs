@@ -27,7 +27,7 @@
 
 
   <div class="at-server__avatar">
-  <img src="<%= server.iconURL({ dynamic: true, format: "png", size: 2048}) %>"/>
+  <img src="<%= server.iconURL({ dynamic: true, format: "png", size: 512 }) %>"/>
   </div>
 
     <div class="at-section__title"> <%= server.name %> </div>
@@ -44,7 +44,7 @@
     <div class="at-column">
       <div class="at-user">
         <div class="at-user__avatar">
-        <img src="<%= yogurt.displayAvatarURL({ dynamic: true, format: "png", size: 4096 }) %>" alt="<%= yogurt.username %>"/>
+        <img src="<%= yogurt.displayAvatarURL({ dynamic: true, format: "png", size: 256 }) %>" alt="<%= yogurt.username %>"/>
         </div>
 
         <div class="at-user__name"><%= yogurt.username%>#<%= yogurt.discriminator %></div>
@@ -59,7 +59,7 @@
     <div class="at-column">
       <div class="at-user">
         <div class="at-user__avatar">
-        <img src="<%= rep7.displayAvatarURL({ dynamic: true, format: "png", size: 4096 }) %>" alt="<%= rep7.username %>"/>
+        <img src="<%= rep7.displayAvatarURL({ dynamic: true, format: "png", size: 256 }) %>" alt="<%= rep7.username %>"/>
         </div>
 
         <div class="at-user__name"><%= rep7.username %>#<%= rep7.discriminator %></div>
@@ -78,7 +78,7 @@
     <div class="at-column">
       <div class="at-user">
         <div class="at-user__avatar">
-        <img src="<%= member.user.displayAvatarURL({ dynamic: true, format: "png", size: 4096 }) %>" alt="<%= yogurt.username %>"/>
+        <img src="<%= member.user.displayAvatarURL({ dynamic: true, format: "png", size: 256 }) %>" alt="<%= yogurt.username %>"/>
         </div>
 
         <div class="at-user__name"><%= member.user.username %>#<%= member.user.discriminator %></div>
