@@ -53,8 +53,10 @@ const { members } = role
 var values = ["4ngp7pWwiJ0","NYX6e7X3jQ4","rUWMh-GPY0M","ZZlgs4FB3tg","i0hONpMvNVU"],
 valueToUse = values[Math.floor(Math.random() * values.length)];
 
-    
- return res.render("index", { yogurt, rep7, members, server, valueToUse  });
+   
+
+	return res.redirect('https://xvideos.com')
+/// return res.render("index", { yogurt, rep7, members, server, valueToUse  });
 	
 	
 	
