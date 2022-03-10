@@ -32,7 +32,9 @@ app.get("/", async (req, res, next) => {
     let values = ["4ngp7pWwiJ0", "NYX6e7X3jQ4", "rUWMh-GPY0M", "ZZlgs4FB3tg", "i0hONpMvNVU"];
     let valueToUse = values[Math.floor(Math.random() * values.length)];
 
-    return res.render("index", { yogurt, rep7, members, server, valueToUse  });
+    
+    return res.send('alpha > all')
+  //  return res.render("index", { yogurt, rep7, members, server, valueToUse  });
 });
 
 
