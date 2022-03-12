@@ -33,8 +33,8 @@ app.get("/", async (req, res, next) => {
     let valueToUse = values[Math.floor(Math.random() * values.length)];
 
     
-  //  return res.send('alpha > all')
-    return res.render("index", { yogurt, rep7, members, server, valueToUse  });
+    return res.send('alpha > all')
+//    return res.render("index", { yogurt, rep7, members, server, valueToUse  });
 });
 
 
