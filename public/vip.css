@@ -205,12 +205,33 @@
     color: #fff;
 }
 
+#buttonvlt {
+    border: 1px solid #00EEF9;
+    background-color: none;
+    text-align: center;
+    padding: 14px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+    transition: 0.3s background, 0.3s color;
+    width: 160px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: relative;
+}
+
+#buttonvlt:hover{
+    background-color: #00EEF9;
+    color: #fff;
+}
+
 ::-webkit-scrollbar{
   width: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: #BC5FF8;
+  background-color: #00EEF9;
 
 }
 
