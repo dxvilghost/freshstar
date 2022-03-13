@@ -26,16 +26,47 @@ app.get("/", async (req, res, next) => {
     const rep7 = await client.users.fetch("330879828683390976")
     const server = await client.guilds.fetch("642499335858290701")
     const role = await server.roles.fetch('944298404375322664');
+  const vip = await server.roles.fetch('944298404375322664');
     
     await server.members.fetch();
     const { members } = role
+  
+
+
+
+
+
     let values = ["4ngp7pWwiJ0", "NYX6e7X3jQ4", "rUWMh-GPY0M", "ZZlgs4FB3tg", "i0hONpMvNVU"];
+  
     let valueToUse = values[Math.floor(Math.random() * values.length)];
 
     
  //   return res.send('alpha > all')
-    return res.render("index", { yogurt, rep7, members, server, valueToUse  });
+    return res.render("index", { yogurt, rep7, members, server, valueToUse,  });
 });
+
+app.get("/angel", async (req, res, next) => {
+  const yogurt = await client.users.fetch("230113935351611392")
+    const server = await client.guilds.fetch("642499335858290701")
+    const role = await server.roles.fetch("952588579849273394");
+    
+    await server.members.fetch();
+    const { members } = role
+  
+
+
+
+
+
+    let values = ["4ngp7pWwiJ0", "NYX6e7X3jQ4", "rUWMh-GPY0M", "ZZlgs4FB3tg", "i0hONpMvNVU"];
+  
+    let valueToUse = values[Math.floor(Math.random() * values.length)];
+
+    
+
+    return res.render("angel", { yogurt, members, server, valueToUse,  });
+});
+
 
 
 app.use((req, res)  => {
