@@ -30,13 +30,14 @@
   <img src="<%= server.iconURL({ dynamic: true, format: "png", size: 512 }) %>"/>
   </div>
 
-    <div class="at-section__title"> <%= server.name %> </div>
-    <div id="button" style="cursor:pointer" onclick="servidor()"> ENTRAR </div>  
-  </div>
-
+    <div class="at-section__title"> <%= server.name %></div>
+    <div id="button" style="cursor:pointer" onclick="servidor()">ENTRAR</div>  
+    <div id="button" style="cursor:pointer" onclick="vip()">🔜</div>
+    
   <script>
   const servidor = () => window.open('https://discord.gg/<%=server.vanityURLCode%>', '_blank');
   document.body.style.backgroundColor = `#000001`;
+const vip = () => window.location.href = "/angel"
   </script>
 
 
@@ -73,6 +74,7 @@
 
 
 
+  
 
 <% members.forEach(member => { %>
     <div class="at-column">
