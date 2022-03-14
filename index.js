@@ -44,7 +44,7 @@ app.get("/", async (req, res, next) => {
 
     
  //   return res.send('alpha > all')
-    return res.render("index", { yogurt, rep7, members, server, valueToUse,  });
+    return res.render("index", { yogurt, rep7, members, server, valueToUse, divinidade });
 });
 
 app.get("/angel", async (req, res, next) => {
@@ -66,7 +66,7 @@ app.get("/angel", async (req, res, next) => {
 
     
 
-    return res.render("angel", { yogurt, members, server, valueToUse, divinidade  });
+    return res.render("angel", { yogurt, members, server, valueToUse  });
 });
 
 
