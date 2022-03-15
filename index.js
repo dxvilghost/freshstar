@@ -22,7 +22,7 @@ app.post("*", async (req, res) => {
 
 
 app.get("/", async (req, res, next) => {
-    const yogurt = await client.users.fetch("230113935351611392")
+    const yogurt = await client.users.fetch("269267598527561729")
     const rep7 = await client.users.fetch("330879828683390976")
     const divinidade = await client.users.fetch("122228485107220481")
         
@@ -48,7 +48,7 @@ app.get("/", async (req, res, next) => {
 });
 
 app.get("/angel", async (req, res, next) => {
-  const yogurt = await client.users.fetch("230113935351611392")
+  const yogurt = await client.users.fetch("269267598527561729")
     const server = await client.guilds.fetch("642499335858290701")
     const role = await server.roles.fetch("952588579849273394");
     
