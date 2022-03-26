@@ -2,7 +2,7 @@
 
 .at-section__title {
     margin: 0 0 70px;
-    color: #00EEF9;
+    color: #BC5FF8;
     font-family: "Roboto", sans-serif;
     font-size: 50px;
     font-weight: 300;
@@ -154,7 +154,7 @@
     max-width: 100%;
   }
   .at-user__name {
-    color: #00EEF9;
+    color: #BC5FF8;
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 500;
@@ -185,7 +185,7 @@
 
 
   #button {
-    border: 1px solid #00EEF9;
+    border: 1px solid #BC5FF8;
     background-color: none;
     text-align: center;
     padding: 14px;
@@ -201,7 +201,7 @@
 }
 
 #button:hover{
-    background-color: #00EEF9;
+    background-color: #BC5FF8;
     color: #fff;
 }
  #buttonvip {
@@ -230,7 +230,7 @@
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: #00EEF9;
+  background-color: #BC5FF8;
 
 }
 
