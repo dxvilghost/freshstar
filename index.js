@@ -24,7 +24,6 @@ app.post("*", async (req, res) => {
 app.get("/", async (req, res, next) => {
     const yogurt = await client.users.fetch("269267598527561729")
     const rep7 = await client.users.fetch("330879828683390976")
-    const divinidade = await client.users.fetch("122228485107220481")
         
     const server = await client.guilds.fetch("642499335858290701")
     const role = await server.roles.fetch('944298404375322664');
@@ -44,7 +43,7 @@ app.get("/", async (req, res, next) => {
 
     
  //   return res.send('alpha > all')
-    return res.render("index", { yogurt, rep7, members, server, valueToUse, divinidade });
+    return res.render("index", { yogurt, rep7, members, server, valueToUse });
 });
 
 app.get("/angel", async (req, res, next) => {
