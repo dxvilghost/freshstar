@@ -45,7 +45,9 @@ const vip = () => window.location.href = "/"
     <div class="at-column">
       <div class="at-user">
         <div class="at-user__avatar">
+        <a href="https://api.betrayed.cc/socials/<%= yogurt.id%>" target="_blank">
         <img src="<%= yogurt.displayAvatarURL({ dynamic: true, format: "png", size: 256 }) %>" alt="<%= yogurt.username %>"/>
+        </a>
         </div>
 
         <div class="at-user__name"><%= yogurt.username%>#<%= yogurt.discriminator %>
@@ -68,7 +70,9 @@ const vip = () => window.location.href = "/"
     <div class="at-column">
       <div class="at-user">
         <div class="at-user__avatar">
+         <a href="https://api.betrayed.cc/socials/<%= member.user.id %>" target="_blank">
         <img src="<%= member.user.displayAvatarURL({ dynamic: true, format: "png", size: 256 }) %>" alt="<%= yogurt.username %>"/>
+         </a>
         </div>
 
         <div class="at-user__name"><%= member.user.username %>#<%= member.user.discriminator %>
