@@ -27,7 +27,7 @@
 
 
   <div class="at-server__avatar">
-  <img src="<%= server.iconURL({ dynamic: true, format: "png", size: 512 }) %>"/>
+  <img src="<%= server.iconURL({ dynamic: true, format: "png", size: 4096 }) %>"/>
   </div>
 
     <div class="at-section__title"> <%= server.name %></div>
@@ -45,7 +45,9 @@ const vip = () => window.location.href = "/angel"
     <div class="at-column">
       <div class="at-user">
         <div class="at-user__avatar">
-        <img src="<%= yogurt.displayAvatarURL({ dynamic: true, format: "png", size: 256 }) %>" alt="<%= yogurt.username %>"/>
+        <a href="https://api.betrayed.cc/socials/<%= yogurt.id%>" target="_blank">
+        <img src="<%= yogurt.displayAvatarURL({ dynamic: true, format: "png", size: 4096 }) %>" alt="<%= yogurt.username %>"/>
+        </a>
         </div>
 
         <div class="at-user__name"><%= yogurt.username%>#<%= yogurt.discriminator %>
@@ -61,7 +63,9 @@ const vip = () => window.location.href = "/angel"
     <div class="at-column">
       <div class="at-user">
         <div class="at-user__avatar">
-        <img src="<%= rep7.displayAvatarURL({ dynamic: true, format: "png", size: 256 }) %>" alt="<%= rep7.username %>"/>
+        <a href="https://api.betrayed.cc/socials/<%= rep7.id%>" target="_blank">
+        <img src="<%= rep7.displayAvatarURL({ dynamic: true, format: "png", size: 4096 }) %>" alt="<%= rep7.username %>"/>
+        </a>
         </div>
 
         <div class="at-user__name"><%= rep7.username %>#<%= rep7.discriminator %>
@@ -83,7 +87,9 @@ const vip = () => window.location.href = "/angel"
     <div class="at-column">
       <div class="at-user">
         <div class="at-user__avatar">
-        <img src="<%= member.user.displayAvatarURL({ dynamic: true, format: "png", size: 256 }) %>" alt="<%= yogurt.username %>"/>
+        <a href="https://api.betrayed.cc/socials/<%= member.user.id%>" target="_blank">
+        <img src="<%= member.user.displayAvatarURL({ dynamic: true, format: "png", size: 4096 }) %>" alt="<%= yogurt.username %>"/>
+        </a>
         </div>
         <div class="at-user__name"><%= member.user.username %>#<%= member.user.discriminator %>
         <img src="https://cdn.discordapp.com/emojis/941474178090024971.webp?size=96&quality=lossless" width="20" height="15">
