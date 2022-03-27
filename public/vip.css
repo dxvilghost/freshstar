@@ -206,7 +206,7 @@
 }
 
 #buttonvlt {
-    border: 1px solid #BC5FF8;
+    border: 1px solid white;
     background-color: none;
     text-align: center;
     padding: 14px;
@@ -222,7 +222,7 @@
 }
 
 #buttonvlt:hover{
-    background-color: #BC5FF8;
+    background-color: white;
     color: #fff;
 }
 
