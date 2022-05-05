@@ -23,14 +23,14 @@ app.post("*", async (req, res) => {
 
 app.get("/", async (req, res, next) => {
     const yogurt = await client.users.fetch("269267598527561729")
-    const rep7 = await client.users.fetch("330879828683390976")
+    const rep7 = await client.users.fetch("330879828683390976") //dinamicos ok!
         
-    const server = await client.guilds.fetch("642499335858290701")
-    const role = await server.roles.fetch('944298404375322664');
+    const server = await client.guilds.fetch("642499335858290701") 
+    const role = await server.roles.fetch('944298404375322664'); //role
   const vip = await server.roles.fetch('944298404375322664');
     
-    await server.members.fetch();
-    const { members } = role
+    await server.members.fetch(); //fetch nos membros do servidor
+    const { members } = role //um push nos membros da role especifica 
   
 
 
@@ -42,7 +42,6 @@ app.get("/", async (req, res, next) => {
     let valueToUse = values[Math.floor(Math.random() * values.length)];
 
     
- //   return res.send('alpha > all')
     return res.render("index", { yogurt, rep7, members, server, valueToUse });
 });
 
