@@ -6,7 +6,7 @@
   "scripts": {
     "start": "sh main.sh"
   },
-  "author": "Sora, Snowflake, Androz",
+  "author": "yogurtd3vil", //obg as pessoas: Sora, Snowflake, Androz, descobri o ejs com o repositorio deles ( https://github.com/vaIentia/discord.id )
   "license": "ISC",
   "dependencies": {
     "child_process": "^1.0.2",
